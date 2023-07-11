@@ -1,0 +1,27 @@
+package school;
+
+public class Score {
+	private String Subject;
+	private int Score;
+	private boolean isMajor;
+	
+	public int getScore() {
+		return Score;
+	}
+	public boolean isMajor() {
+		return isMajor;
+	}
+	public void setMajor(boolean isMajor) {
+		this.isMajor = isMajor;
+	}
+	public String getSubject() {
+		return Subject;
+	}
+	public void setSubject(String subject) {
+		Subject = subject;
+	}
+	public void setScore(int score) {
+		this.Score = score;
+	}
+	
+}

@@ -1,0 +1,28 @@
+package ch02;
+
+public class Student {
+	private int studentNumber;
+	private String studentName;
+	
+	public Student (int studentNumber, String studentName)
+	{
+		this.studentNumber = studentNumber;
+		this.studentName = studentName;
+	}
+	
+	public String toString() {
+		return studentNumber + "," + studentName;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if(obj instanceof Student) {
+			Student std = (Student)obj;
+			if(this.studentNumber == std.studentNumber)
+				return true;
+			else
+				return false;
+		}
+		return false;
+	}
+}

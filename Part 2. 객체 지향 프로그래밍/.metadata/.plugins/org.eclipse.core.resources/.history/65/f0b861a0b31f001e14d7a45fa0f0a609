@@ -1,0 +1,48 @@
+package school;
+
+import java.util.ArrayList;
+
+public class Student {
+	public String Name;
+	private String Number;
+	private String Major;
+	private ArrayList<Score> Scores = new ArrayList<>();
+
+	public Student() {}
+	
+	public Student(String Name, String Number) {
+		this.Name = Name;
+		this.Number = Number;
+	}
+	
+	public String getName() {
+		return Name;
+	}
+	public String getMajor() {
+		return Major;
+	}
+
+	public void setMajor(String major) {
+		Major = major;
+	}
+
+	public void setName(String name) {
+		this.Name = name;
+	}
+	public ArrayList<Score> getScores() {
+		return Scores;
+	}
+
+	public void setScores(ArrayList<Score> scores) {
+		Scores = scores;
+	}
+
+	public String getNumber() {
+		return Number;
+	}
+	public void setNumber(String number) {
+		Number = number;
+	}
+	
+	
+}

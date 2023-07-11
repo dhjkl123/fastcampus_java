@@ -1,0 +1,50 @@
+package ch23;
+
+import java.util.ArrayList;
+
+class FastLibrary{
+	public ArrayList<String> shelf = new ArrayList<>();
+	
+	public FastLibrary() {
+		shelf.add("book1");
+		shelf.add("book2");
+		shelf.add("book3");
+		shelf.add("book4");
+		shelf.add("book5");
+		shelf.add("book6");
+	}
+	
+	public String lendBook() {
+		
+		Thread t = Thread.currentThread();
+		
+		String book = shelf.remove(0);
+		System.out.println(t.getName() + " : " + book + " lend");
+		return book;
+	}
+	
+	public void returnBook(String book) {
+		Thread t = Thread.currentThread();
+		shelf.add(book);
+		System.out.println(t.getName() + " : " + book + " return");
+	}
+}
+
+class Student extends Thread{
+	public void run() {
+		String title = LibarayMain.libray.lendBook();
+		
+		if(title == null) return;
+		sleep(5000);
+		LibraryMain.libray.returnBook(title);
+	}
+}
+
+public class LibararyMain {
+	public static FastLibrary libray = new FastLibrary();
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

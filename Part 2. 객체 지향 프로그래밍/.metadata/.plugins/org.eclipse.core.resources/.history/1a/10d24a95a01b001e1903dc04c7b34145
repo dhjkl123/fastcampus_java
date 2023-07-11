@@ -1,0 +1,22 @@
+package ch03;
+
+public class VIPCustomer extends Customer {
+	
+	private String agentId;
+	double saleRatio;
+	
+	public VIPCustomer() {
+		bonusRatio = 0.05;
+		saleRatio = 0.1;
+		customerGrade = "VIP";
+	}
+
+	public String getAgentId() {
+		return agentId;
+	}
+
+	public void setAgentId(String agentId) {
+		this.agentId = agentId;
+	}
+
+}

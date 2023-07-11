@@ -1,0 +1,11 @@
+package ch13;
+
+import java.util.Scanner;
+
+public class ConitionTest {
+	Scanner scanner = new Scanner(System.in);
+	
+	int num = scanner.nextInt();
+	System.out.println(num);
+
+}

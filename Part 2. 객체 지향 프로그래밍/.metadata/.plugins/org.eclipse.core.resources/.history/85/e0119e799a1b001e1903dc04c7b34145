@@ -1,0 +1,30 @@
+package ch24;
+
+import java.util.ArrayList;
+
+public class Student {
+	
+	public Student(String Name, int Number) {
+		studentName = Name;
+		studentNumber = Number;
+	}
+	
+	private int studentNumber;
+	private String studentName;
+	private ArrayList<Subject> subjectArray;
+
+	public String getStudentName() {
+		return studentName;
+	}
+	public void setStudentName(String studentName) {
+		this.studentName = studentName;
+	}
+	public ArrayList<Subject> getSubjectArray() {
+		return subjectArray;
+	}
+	public void addSubject(String subjectName, int subjectScore) {
+		this.subjectArray.add(new Subject(subjectName,subjectScore));
+	}
+	
+
+}

@@ -1,0 +1,18 @@
+package ch06;
+
+public class TreeDPrinterTest {
+
+	public static void main(String[] args) {
+		// Object로 Generic 구현
+		Powder powder = new Powder();
+		ThreeDPrinter3 printer = new ThreeDPrinter3();
+		
+		printer.setMaterial(powder);
+		
+		Powder p = (Powder)printer.getMaterial(); // 항상 형변환을 해줘야함
+		
+		//Generic Class 사용
+		
+	}
+
+}

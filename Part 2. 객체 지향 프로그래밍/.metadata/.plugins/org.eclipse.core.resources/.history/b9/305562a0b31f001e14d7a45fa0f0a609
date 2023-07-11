@@ -1,0 +1,30 @@
+package school;
+
+import java.util.ArrayList;
+
+public class Calc {
+		
+	public String calcScore(Score score) {
+		
+		
+		
+		return null;
+	}
+	
+	public String printResult (ArrayList<Student> Students, String Subject) {
+		
+		for(Student st : Students) {
+			String line = st.getName() + " | " + st.getNumber() + "|" + st.g;
+			
+			for(Score sc : st.getScores()) {
+				if(sc.getSubject().equals(Subject)) {
+					calcScore(sc);
+				}
+			}
+			
+			
+		}
+		
+		return null;
+	}
+}

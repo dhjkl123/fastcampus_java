@@ -1,0 +1,27 @@
+package ch03;
+
+public class CustomerTest {
+
+	public static void main(String[] args) {
+//		Customer customer1 = new Customer();
+//		customer1.setCustomerName("이순신");
+//		customer1.setCustomerId(10010);
+//		customer1.bonusPoint = 1000;
+//		System.out.println(customer1.showCustomerInfo());
+		
+//		VIPCustomer customer2 = new VIPCustomer();
+//		customer2.setCustomerName("김유신");
+//		customer2.setCustomerId(10020);
+//		customer2.bonusPoint = 10000;
+//		System.out.println(customer2.showCustomerInfo());
+		
+		VIPCustomer customer = new VIPCustomer(10010, "김유신");
+		customer.bonusPoint = 10000;
+		System.out.println(customer.showCustomerInfo());
+		
+		Customer vc = new VIPCustomer(123345,"noname");
+		
+		
+	}
+
+}

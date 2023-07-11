@@ -1,0 +1,10 @@
+package ch13.web.userinfo;
+
+public class UserInfoClient {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

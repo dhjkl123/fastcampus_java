@@ -1,0 +1,9 @@
+package ch19;
+
+public class Milk extends Decorator {
+
+	public Milk(Coffee coffee) {
+		super(coffee);
+	}
+	
+}

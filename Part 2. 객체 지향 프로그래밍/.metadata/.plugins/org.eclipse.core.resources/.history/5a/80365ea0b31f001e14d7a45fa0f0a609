@@ -1,0 +1,22 @@
+package school;
+
+public class Score {
+	private String Subject;
+	private int Score;
+	
+
+	public String getSubject() {
+		return Subject;
+	}
+	public void setSubject(String subject) {
+		Subject = subject;
+	}
+	public int getScore() {
+		return Score;
+	}
+	public void setScore(int score) {
+		this.Score = score;
+	}
+	
+	
+}
