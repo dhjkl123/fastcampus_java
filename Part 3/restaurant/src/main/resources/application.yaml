@@ -1,0 +1,13 @@
+naver:
+  url:
+    search:
+      local: https://openapi.naver.com/v1/search/local.json
+      image: https://openapi.naver.com/v1/search/image
+    client:
+      id: v9FlvhoPmxlEOeZ1pp_E
+      secret: KepiKCymAL
+
+spring:
+  mvc:
+    view:
+      suffix: .html
